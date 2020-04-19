@@ -110,9 +110,15 @@ textarea {
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
+   padding: 15px 0;
+   margin: 0;
  }
 
+.header-divider {
+  width: 0%;
+}
 header nav {
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -120,8 +126,19 @@ header nav {
 }
 
 header nav ul {
+  width: 45%;
   display: flex;
   justify-content: space-around;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 footer .social-icons {
@@ -143,6 +160,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 50px 20px;
 }
 
 /* --- Subscription Aside --- */
@@ -153,14 +171,26 @@ aside {
   flex-flow: row wrap;
 }
 
+aside {
+  padding: 30px 20px 50px 20px;
+}
+
 /* --- Features Section --- */
 .features {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 20px;
 }
 
+.features p {
+  margin: 0;
+}
+
+.features article {
+  width: 55%;
+}
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -174,6 +204,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 20px;
+}
+
+.reviews h3 {
+  width: 45%;
 }
 
 /* ------------- Mobile Styles - About Page ---------------------------- */
