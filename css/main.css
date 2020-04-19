@@ -112,6 +112,7 @@ textarea {
 header {
   padding: 15px 0;
 }
+
  header .content-wrapper {
    display: flex;
    justify-content: center;
@@ -243,6 +244,9 @@ aside {
   flex-flow: row wrap;
 }
 
+.contact-content p {
+  margin: 0;
+}
 /* ------------- Mobile Styles - FAQ Page ---------------------------- */
 .faq {
   display: flex;
@@ -256,6 +260,15 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 /* ==========================================================================
    Helper classes
