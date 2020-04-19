@@ -157,15 +157,17 @@ footer .content-wrapper {
 footer .contact {
   margin-bottom: 50px;
 }
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+
 footer .social-icons p {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -238,6 +240,12 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-section {
@@ -363,7 +371,7 @@ aside {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /*** TABLET STYLES ***/
+  /* =========================TABLET STYLES =================================*/
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -390,75 +398,6 @@ aside {
   header nav ul {
     justify-content: space-between;
   }
-  /****************** HOMEPAGE STYLES ************************/
-  /*** Aside - Signup Form ***/
-  aside .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    margin: 50px 0;
-  }
-
-  aside .form, aside .form-description {
-    width: 40%;
-    margin: 0;
-  }
-
-  /*** Features ***/
-  .features article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    flex-basis: 50%;
-}
-.features .features-item-description {
-  width: 50%;
-}
-  /*** Reviews ***/
-  .reviews article {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .reviews article div {
-    width: 50%;
-  }
-
-  /****************** FAQ PAGE STYLES ************************/
-  .faq .content-wrapper {
-    justify-content: space-between;
-  }
-
-  .faq h2 {
-    width: 100%;
-  }
-
-  .faq .faq-content {
-    flex-basis: 45%;
-  }
-
-  /****************** ABOUT PAGE STYLES ************************/
-  .mission-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
-
-  .mission-content p {
-    width: 45%;
-  }
-
-  .contact-section .content-wrapper h2 {
-    width: 80%;
-  }
-
-  .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
   /*** Footer ***/
   footer .content-wrapper {
@@ -480,10 +419,123 @@ aside {
     width: 100%;
     text-align: center;
   }
+
+  /*** HOMEPAGE - MOBILE ***/
+  /*** Aside - Signup Form ***/
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 50px 0;
+  }
+
+  aside .form, aside .form-description {
+    width: 40%;
+    margin: 0;
+  }
+  /*** Features Section ***/
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+}
+.features .features-item-description {
+  width: 50%;
+}
+  /*** Reviews Section ***/
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 50%;
+  }
+
+  /*** FAQ PAGE - MOBILE ***/
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq .faq-content {
+    flex-basis: 45%;
+  }
+
+  /*** ABOUT PAGE - MOBILE STYLES ***/
+  /*** Mission Section ***/
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+  /*** Contact Section ***/
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  /*** DESKTOP STYLES ***/
+  /* =========================DESKTOP STYLES =================================*/
+  .content-wrapper {
+    max-width: 960px;
+    margin: 100px 0;
+  }
+
+  /* ============================ HOMEPAGE ================================== */
+  /*** Aside Newsletter Signup ***/
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: 50px 0;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /*** Features Section ***/
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /*** Reviews Section ***/
+  .reviews article div {
+    width: 40%;
+  }
+
+  /* ============================ ABOUT PAGE ================================ */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ============================ FAQ PAGE ================================ */
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
