@@ -469,6 +469,16 @@ input[type=button] {
     max-width: 640px;
     margin: 100px 0;
   }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.33em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
   /*** Header ***/
   header {
     justify-content: space-around;
@@ -492,6 +502,12 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+  }
+
   /*** Footer ***/
   footer .content-wrapper {
     width: 65%;
@@ -511,6 +527,11 @@ input[type=button] {
   footer .copyright {
     width: 100%;
     text-align: center;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
   }
 
   /*** HOMEPAGE - MOBILE ***/
@@ -582,6 +603,10 @@ input[type=button] {
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -589,6 +614,25 @@ input[type=button] {
   .content-wrapper {
     max-width: 960px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.33em;
+  }
+  /* Hero */
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 60%;
   }
 
   /* ============================ HOMEPAGE ================================== */
@@ -605,6 +649,10 @@ input[type=button] {
     width: 30%;
   }
 
+  .form-description p {
+    font-size: 1.125em;
+  }
+
   /*** Features Section ***/
   .features h2 {
     width: 90%;
@@ -619,15 +667,30 @@ input[type=button] {
     width: 40%;
   }
 
+  footer h4 {
+    font-size: 1.875em;
+  }
   /* ============================ ABOUT PAGE ================================ */
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /* ============================ FAQ PAGE ================================ */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1em;
   }
 }
 
