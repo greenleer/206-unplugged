@@ -320,8 +320,21 @@ input[type=button] {
   margin-bottom: 60px;
 }
 
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features article {
@@ -610,10 +623,6 @@ input[type=button] {
   }
   /*** Features Section ***/
   .features article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
     flex-basis: 50%;
 }
 .features .features-item-description {
@@ -702,7 +711,7 @@ input[type=button] {
 
   p {
       font-size: 1.125em;
-      line-height: 1.33em;
+      line-height: 1.5em;
   }
 
   header figure {
@@ -747,6 +756,10 @@ input[type=button] {
 
   .features article {
     flex-basis: 33%;
+  }
+
+  .features .features-item-description {
+    width: 60%;
   }
 
   /*** Reviews Section ***/
