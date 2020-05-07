@@ -133,6 +133,7 @@ a {
 }
 
 ul {
+  padding: 0;
   list-style: none;
 }
 
@@ -289,6 +290,10 @@ aside .form {
   margin-top: 30px;
 }
 
+aside .form-description p {
+  width: 90%;
+}
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -325,6 +330,7 @@ input[type=button] {
 
 .features h2 {
   margin-bottom: 60px;
+  width: 90%;
 }
 
 .features article {
@@ -366,6 +372,7 @@ input[type=button] {
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1em;
+  width: 90%;
 }
 
 .reviews h3 {
@@ -633,20 +640,28 @@ input[type=button] {
     width: 40%;
     margin: 0;
   }
+
+  aside .form-description p {
+    width: 100%;
+  }
   /*** Features Section ***/
+  .features h2 {
+    margin-bottom: 60px;
+  }
+
   .features article {
     flex-basis: 50%;
-}
-.features .features-item-description {
-  width: 50%;
-}
+  }
+  .features .features-item-description {
+    width: 50%;
+  }
   /*** Reviews Section ***/
   .reviews article {
     display: flex;
     justify-content: space-between;
   }
   .reviews h2 {
-    width: 85%;
+    width: 80%;
   }
 
   .reviews h3 {
